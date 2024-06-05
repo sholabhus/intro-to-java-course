@@ -13,22 +13,17 @@ public class CollectionsExercises {
         //  - invoke the method element() on the list and print the result on the screen
         //  - return the list
         LinkedList<Integer>integers =new LinkedList<>();
-        System.out.println(integers.size());
-        //throw new RuntimeE xception("Not implemented");
-        integers.add(4);
+       integers.add(4);
         integers.add(5);
         integers.add(6);
         integers.add(8);
         integers.add(2);
         integers.add(9);
         integers.add(2,4);
-        System.out.println(integers.element());
+        System.out.print(integers.element());
         return integers;
     }
-    //}
-
-
-
+   
 
 
     public Stack<Integer> useStack() {
@@ -41,16 +36,14 @@ public class CollectionsExercises {
         //  - return the stack
         //throw new RuntimeException("Not implemented");
         Stack<Integer>integers =new Stack<>();
-        System.out.println(integers.size());
         integers.add(5);
         integers.add(6);
         integers.add(8);
-        integers.add(8);
         integers.add(9);
-      System.out.println(integers.elementAt(0));
-      System.out.println(integers.elementAt(4));
-      System.out.println(integers.pop());
-      System.out.println(integers.push(4));
+      System.out.print(integers.elementAt(0));
+      System.out.print(integers.elementAt(4));
+      System.out.print(integers.pop());
+      System.out.print(integers.push(4));
       return integers;
 
 }
@@ -66,16 +59,14 @@ public class CollectionsExercises {
         //throw new RuntimeException("Not implemented");
 
         ArrayDeque<Integer>integers = new ArrayDeque<>();
-        System.out.println(integers.size());
         integers.add(5);
         integers.add(6);
         integers.add(8);
-        integers.add(8);
         integers.add(9);
-        System.out.println(integers.getFirst());
-        System.out.println(integers.getLast());
-        System.out.println(integers.poll());
-        System.out.println(integers.element());
+        System.out.print(integers.getFirst());
+        System.out.print(integers.getLast());
+        System.out.print(integers.poll());
+        System.out.print(integers.element());
         return integers;
 
 
@@ -94,17 +85,17 @@ public class CollectionsExercises {
         //  - determine whether the map contains "English" as a language and print the result on the screen
         //  - return the map
        // throw new RuntimeException("Not implemented");
-    HashMap<Integer,String>countries= new HashMap<>();
-    countries.put(1, "TypeScript");
-    countries.put(2, "TypeScript");
-    countries.put(2, "TypeScript");
-    countries.put(2, "TypeScript");
-    countries.put(2, "TypeScript");
-    countries.put(2, "TypeScript");
-    System.out.println(countries.keySet());
-    System.out.println(countries.values());
-    System.out.println(countries.containsValue("English"));
-    return countries;
+    HashMap<Integer,String>language= new HashMap<>();
+    language.put(1, "TypeScript");
+    language.put(2, "Kotlin");
+    language.put(3, "Python");
+    language.put(4, "Java");
+    language.put(5, "JavaScript");
+    language.put(6, "Rust");
+    System.out.print(language.keySet());
+    System.out.print(language.values());
+    System.out.print(language.containsValue("English"));
+    return language;
     
     }
 
