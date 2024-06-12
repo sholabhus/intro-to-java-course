@@ -59,6 +59,7 @@ public class CollectionsExercisesTest {
         assertThat(result.get(5), is(2));
         assertThat(result.get(6), is(9));
         assertThat(result.get(7), is(2));
+        // check that what has been printed is "4"
         assertThat(outputStreamCaptor.toString().trim(), is("4"));
     }
 
@@ -75,6 +76,7 @@ public class CollectionsExercisesTest {
         assertThat(result.get(1), is(6));
         assertThat(result.get(2), is(8));
         assertThat(result.get(3), is(4));
+        // checks that 599 has been printed to the screen
         assertThat(outputStreamCaptor.toString().trim(), is("599"));
     }
 

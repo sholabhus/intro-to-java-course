@@ -12,19 +12,26 @@ public class CollectionsExercises {
         //  - add 4 as the 3rd element of the list
         //  - invoke the method element() on the list and print the result on the screen
         //  - return the list
+        //Create an empty linked list
         LinkedList<Integer>integers =new LinkedList<>();
-       integers.add(4);
+        // add 4 as the first element
+        integers.add(4);
+        //then add 5, 6, 8, 2, 9 to the list
         integers.add(5);
         integers.add(6);
         integers.add(8);
         integers.add(2);
         integers.add(9);
+        // add another 2 as the last element of the list
+        integers.add(2);
+        //add 4 as the 3rd element of the list
         integers.add(2,4);
+        // .element() is used to retrieve the FIRST element of the list
         System.out.print(integers.element());
+        //retutn integers
         return integers;
     }
    
-
 
     public Stack<Integer> useStack() {
         // TODO: create an empty stack
@@ -35,15 +42,22 @@ public class CollectionsExercises {
         //  - invoke the push(4) method on the stack
         //  - return the stack
         //throw new RuntimeException("Not implemented");
+        //create an empty stack
         Stack<Integer>integers =new Stack<>();
-        integers.add(5);
-        integers.add(6);
-        integers.add(8);
-        integers.add(9);
+        //Add elements to the stack using push
+        integers.push(5);
+        integers.push(6);
+        integers.push(8);
+        integers.push(9);
+        //print the first element of the stack
       System.out.print(integers.elementAt(0));
-      System.out.print(integers.elementAt(4));
+      //print last element of the stack
+      System.out.print(integers.lastElement());
+      //invoke the pop() method on the stack and print the result
       System.out.print(integers.pop());
-      System.out.print(integers.push(4));
+      //invoke the push(4)method on the stack 
+      integers.push(4);
+      //return integers
       return integers;
 
 }
@@ -57,16 +71,22 @@ public class CollectionsExercises {
         //  - invoke the element() method on the queue and print the result on the screen
         //  - return the queue
         //throw new RuntimeException("Not implemented");
-
+       // create an empty arrayDeque
         ArrayDeque<Integer>integers = new ArrayDeque<>();
+        //add 5, 6, 8, 9 to the queue
         integers.add(5);
         integers.add(6);
         integers.add(8);
         integers.add(9);
+        //print the first element of the queue on the screen
         System.out.print(integers.getFirst());
+        //print the last element of the queue on the screen
         System.out.print(integers.getLast());
+       // invoke the method poll() on the queue and print the result on the screen
         System.out.print(integers.poll());
+        //invoke the element() method on the queue and print the result on the screen
         System.out.print(integers.element());
+        //return queue
         return integers;
 
 
@@ -85,16 +105,22 @@ public class CollectionsExercises {
         //  - determine whether the map contains "English" as a language and print the result on the screen
         //  - return the map
        // throw new RuntimeException("Not implemented");
+       //create an empty hash map
     HashMap<Integer,String>language= new HashMap<>();
+    //add entries
     language.put(1, "TypeScript");
     language.put(2, "Kotlin");
     language.put(3, "Python");
     language.put(4, "Java");
     language.put(5, "JavaScript");
     language.put(6, "Rust");
+    //print set of keys from the map
     System.out.print(language.keySet());
+    //print set of values from the Map
     System.out.print(language.values());
+    //determine whether the map contains "English" as a language and print the result on the screen
     System.out.print(language.containsValue("English"));
+    //return the map
     return language;
     
     }

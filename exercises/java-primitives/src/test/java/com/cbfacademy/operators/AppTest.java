@@ -56,6 +56,8 @@ public class AppTest {
         assertBooleanResult(() -> App.isMoreThan(operand1, operand2), expected);
     }
 
+
+
     private void assertBooleanResult(Callable<Boolean> fn, Boolean expected) {
         try {
             assertThat(fn.call(), is(expected));
