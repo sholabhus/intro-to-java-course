@@ -2,8 +2,9 @@ package com.cbfacademy.accounts;
 
 public class Account {
 
+ // fields
     private int accountNumber;
-    private double balance;
+    protected double balance;
 
 
 //constructor
@@ -23,7 +24,8 @@ public int getAccountNumber(){
 }
 
 public double deposit(double amount){
-    this.balance =this.balance +amount;
+    //this.balance =this.balance +amount;
+    this.balance += amount;
     return this.balance;
 
 }
