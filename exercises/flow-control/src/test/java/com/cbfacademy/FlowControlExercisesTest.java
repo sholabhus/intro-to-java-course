@@ -35,7 +35,7 @@ public class FlowControlExercisesTest {
     public void fizzBuzz(List<Integer> numbers, List<String> expected) {
         final FlowControlExercises exercise = new FlowControlExercises();
 
-        final List<String> result = exercise.fizzBuzz(numbers);
+        final List<String> result = exercise.fizz(numbers);
 
         assertThat(result.size(), is(expected.size()));
         assertThat(result, is(expected));
