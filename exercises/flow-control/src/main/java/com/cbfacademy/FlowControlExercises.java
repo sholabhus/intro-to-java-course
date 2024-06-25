@@ -8,9 +8,9 @@ import java.util.Map;
 
 public class FlowControlExercises {
 
-    public List<String> fizz (List<Integer> numbers) {
+public List<String> fizz (List<Integer> numbers) {
          
-    List<String>result =new ArrayList<>();
+    List<String>result =new ArrayList<>(); //Creates a new ArrayList<String> called result
 // Iterate through each number in the input list
         for (int i=0; i < numbers.size(); i++){
 // Check if the current number is divisible by both 3 and 5
@@ -38,7 +38,7 @@ public class FlowControlExercises {
     "July", "August", "September", "October", "November", "December"};  
 
        //check  if number is withinthe valid range of 1 to 12
-        if(number >=1 && number<=12){
+        if(number >=1 && number <=12){
             return month[number-1]; //for zero index
         }else{
             return "Invalid month number";
@@ -78,10 +78,6 @@ public Map<String, Integer> sumOfOddsAndSumOfEvens() {
 
             public List<Integer> reverse(ArrayList<Integer> numbers) {
 
-         // TODO - Implement this method such that
-        //  - it takes an array list of integers
-        //  - it returns the list in reverse order
-      //  throw new RuntimeException("Not implemented");
         
        List<Integer> list = new ArrayList<>(); //  Creates a new ArrayList<Integer> called list
         

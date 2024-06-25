@@ -3,6 +3,7 @@ package com.cbfacademy.shapes;
 public class Sphere extends Shape{
     protected double radius;
 
+// constructor
     public Sphere(double radius){
         this.name ="Sphere";
         this.radius =radius;
