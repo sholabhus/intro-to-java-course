@@ -93,7 +93,7 @@ The `check` method should:
 
 The `map` method should:
 - check each provided file's extension and map the returned value as 1 if true or 0 if false
-- map `-1` when an exception occurs
+- map `-1` when an excepti on occurs
 
 **Example**
 

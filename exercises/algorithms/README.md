@@ -89,6 +89,7 @@ Here is the pseudocode for the Binary Search algorithm.
 NB: remember that this algorithm expects to be given sorted data otherwise the results will be unpredictable.
 
 ```txt
+
 do until the pointers low and high meet each other.
     //find the index at the mid point of the given array (add the lowest index to the highest index and divide by two, e.g. 0 + 10 / 2 = 5)
     mid = (low + high)/2
