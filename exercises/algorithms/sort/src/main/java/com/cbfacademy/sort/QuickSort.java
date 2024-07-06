@@ -5,7 +5,7 @@ public class QuickSort implements ArraySorter{
     @Override
     public void sort(int[] arr, int startIndex, int endIndex) {
 
-        
+     // Ensure the position of the element is higher than the start element   
     if (startIndex < endIndex){
         // Partition the array around a pivot element and get its position
         int pivotIndex = partition(arr, startIndex, endIndex);
@@ -45,7 +45,7 @@ if (arr[currentIndex] <= pivot){
 }
 
 // We are given the input array, the position of the left-hand element and the position of the right-hand element
-private void swap(int[]arr, int leftIndex, int rightIndex){
+public void swap(int[]arr, int leftIndex, int rightIndex){
     // Store the value of the left-hand element
     int temp = arr[leftIndex];
     // Assign the value of the right-hand element to the left-hand element
@@ -53,4 +53,6 @@ private void swap(int[]arr, int leftIndex, int rightIndex){
     // Assign the original value of the left-hand element to the right-hand element
     arr[rightIndex] = temp;
 }
+
 }
+
