@@ -6,7 +6,7 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 
-import javax.net.ssl.HttpsURLConnection;
+
 
 public class App {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class App {
        //create the URL from URI
         URL url =new URI("https://codingblackfemale").toURL();
         //open connection
-        HttpURLConnection connection = (HttpsURLConnection) url.openConnection();
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         //Read the response   
         try
