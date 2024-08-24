@@ -15,21 +15,22 @@ public class FizzBuzzT {
     @Test
     @DisplayName("print Fizz")
     public void fizz(){
-        //divisible by3
+        //multiples of 3, returns Fizz
         assertEquals("Fizz", FizzBuzz.get(3));
         assertEquals("Fizz", FizzBuzz.get(6));
 
 }
 @Test
 @DisplayName("print Buzz")
-//divisible by5
     public void buzz(){
+        //multiples of 5,returns Buzz 
         assertEquals("Buzz", FizzBuzz.get(5));
 }
 
 @Test
 @DisplayName("print FizzBuzz")
 public void fizzBuzz(){
+    //multiples of 15,returns FizzBuzz 
    assertEquals("FizzBuzz", FizzBuzz.get(15));
    assertEquals("FizzBuzz", FizzBuzz.get(30));
 
