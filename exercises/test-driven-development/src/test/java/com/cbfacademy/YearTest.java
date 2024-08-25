@@ -15,10 +15,10 @@ public class YearTest {
 
     static Stream<Arguments>LeapYearTest(){
         return Stream.of(
-            Arguments.of(true, 2000),
-            Arguments.of(false, 1700),
-            Arguments.of(true, 2004),
-            Arguments.of(false, 2005)
+            Arguments.of(true, 2000), // Leap year, divisible by 400
+            Arguments.of(false, 1700), // Not a leap year, divisible by 100 but not by 400
+            Arguments.of(true, 2004), // Leap year, divisible by 4 but not by 100
+            Arguments.of(false, 2005) // Not a leap year, not divisible by 4
         );
     }
 
